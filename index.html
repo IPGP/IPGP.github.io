@@ -22,7 +22,7 @@ layout: default
           <p>
             <ul>
             {% for repository in site.github.public_repositories %}
-              <li> <a id={{ repository.name }} class="anchor" href={{ repository.html_url }} aria-hidden="true"></a>{{ repository.name }}</li>
+              <li> <a id={{ repository.name }} class="anchor" href={{ repository.html_url }} aria-hidden="true">{{ repository.name }}</a></li>
             {% endfor %}
             </ul>
           </p>
