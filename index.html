@@ -21,7 +21,7 @@ layout: default
         <p>
           <ul>
             {% for repository in site.github.public_repositories %}
-            {% if repository.name != "coordination" or repository != "IPGP.github.io"%} 
+            {% if repository.name != 'coordination' or repository != 'IPGP.github.io'%} 
             <li> <a id={{ repository.name }} class="anchor" href={{ repository.html_url }} aria-hidden="true">{{ repository.name }}</a></li>
             {% endif %}
 
