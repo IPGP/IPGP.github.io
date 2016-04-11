@@ -21,9 +21,9 @@ layout: default
         <p>
           <ul>
             {% for repository in site.github.public_repositories %}
-            {% if repository.name != 'coordination' or repository != 'IPGP.github.io'%} 
-            <li> <a id={{ repository.name }} class="anchor" href={{ repository.html_url }} aria-hidden="true">{{ repository.name }}</a></li>
-            {% endif %}
+              {% if repository.name != 'coordination' and repository != 'IPGP.github.io' %} 
+                <li> <a id={{ repository.name }} class="anchor" href={{ repository.html_url }} aria-hidden="true">{{ repository.name | downcase }}</a></li>
+              {% endif %}
 
             {% endfor %}
           </ul>
