@@ -87,7 +87,7 @@ header h2 {
 
 #container {
   width: 100%;
-  padding: 20px;
+  padding-left: 20px;
   overflow: hidden;
   min-height: 595px;
   background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
@@ -99,7 +99,7 @@ header h2 {
 }
 
 .rightcolumn{
-    margin-left: 201px;
+    margin-left: 250px;
 }
 
 #downloads {
