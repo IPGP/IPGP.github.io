@@ -87,12 +87,21 @@ header h2 {
 
 #container {
   min-height: 595px;
+  display: flex;
   background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
 }
 
 .inner {
   width: 620px;
   margin: 0 auto;
+}
+
+.fixed{
+    width: 200px;
+}
+
+.flex-item{
+    flex-grow: 1;
 }
 
 #container .inner img {
