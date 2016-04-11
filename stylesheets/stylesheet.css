@@ -86,26 +86,19 @@ header h2 {
 }
 
 #container {
+  width: 100%;
+  overflow: hidden;
   min-height: 595px;
-  display: flex;
   background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
 }
 
-.inner {
-  width: 620px;
-  margin: 0 auto;
-}
-
-.fixed{
+.leftcolumn{
     width: 200px;
+    float: left;
 }
 
-.flex-item{
-    flex-grow: 1;
-}
-
-#container .inner img {
-  max-width: 100%;
+.rightcolumn{
+    margin-left: 201px;
 }
 
 #downloads {
