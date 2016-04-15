@@ -2,32 +2,50 @@
 layout: default
 ---
 
-<body>
   <div id="container">
       <div class="leftcolumn">
           <img src="images/ipgp_logo.svg" width=100% />
       </div>
 
+
       <div class="rightcolumn">
-      <hr>
+
+       
+      <section>
+      <h3>
+          <a id="description" class="anchor" href="description" aria-hidden="true"></a>The GitHub organisation of IPGP</h3>
+      <p>
+        The <a href="http://www.ipgp.fr">Institut de Physique du Globe de Paris (IPGP)</a> created a <a href="https://github.com/IPGP">GitHub organisation</a> in order to promote the open-source work of its collaborators. The aim of this organisation is to help the dissemination, in the Earth science community, of source codes produced at IPGP.
+      
+      <h3>
+          <a id="how-to" class="anchor" href="how-to" aria-hidden="true"></a>How to participate</h3>
+      <p>
+        If you are an employee of IPGP please visit <a href:"https://github.com/IPGP/coordination/"> this repository</a>, to learn how you can join the organisation and share your own code. If you are not an employee of IPGP, feel free to download, fork, pull-request or raise an issue on any of our repositories and don't forget to cite the work is you use for academic work.</p>
+
         <h3>
           <a id="repositories" class="anchor" href="repositories" aria-hidden="true"></a>Repositories of IPGP on GitHub</h3>
         <p>
           <ul>
             {% for repository in site.github.public_repositories %}
               {% if repository.name != 'coordination' and repository.name != 'IPGP.github.io' %} 
-                <li> <a id={{ repository.name }} class="anchor" href={{ repository.html_url }} aria-hidden="true">{{ repository.name | downcase }}</a></li>
+            <li> <a id={{ repository.name }} class="anchor" href={{ repository.html_url }} aria-hidden="true">{{ repository.name | downcase }}</a>
+              <ul style="list-style-type:none">
+                <li> {{repository.description}}
+                </li>
+              </ul>
+            
+            </li>
               {% endif %}
 
             {% endfor %}
           </ul>
         </p>
-      </section>
-      <section id="downloads" class="clearfix">
-        <a href="https://github.com/IPGP" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
+
+  </section>
+
+<section id="downloads" class="clearfix">
+  <a href="https://github.com/IPGP" id="view-on-github" class="button"><span>View on GitHub</span></a>
+</section>
       </div>
     </div>
   </div>
-</body>
-</html>
