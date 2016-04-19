@@ -99,11 +99,16 @@ header h2 {
     float: left;
 }
 
-.rightcolumn{
+.centercolumn{
     margin-left: 300px;
     padding-left: 50px;
     width: 550px;
     padding: 10px;
+}
+.rightcolumn{
+    padding: 10px;
+    position: absolute;
+    right: 10px;
 }
 
 #downloads {
